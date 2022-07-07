@@ -54,7 +54,7 @@
             {% endfor %}
             {% if user.is_authenticated %}
             <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#exam">
-                Start Exam
+                Begin Exam
             </button>
             <div id="exam" class="collapse">
                 <form id="questionform" action="{% url 'onlinecourse:submit' course.id %}" method="post">
